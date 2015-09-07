@@ -6,5 +6,3 @@
 ?>
 
 <p><a href="loggedin.php">Go back</a></p>
-
-test 123
