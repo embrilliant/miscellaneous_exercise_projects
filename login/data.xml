@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <user>
+        <username>micha</username>
+        <password>testmicha</password>
+        <lastlogin>2015-09-03 16:42</lastlogin>
+    </user>
+
+    <user>
+        <username>christoph</username>
+        <password>test123</password>
+        <lastlogin>2015-09-03 17:55</lastlogin>
+    </user>
+
+    <user>
+        <username>claudia</username>
+        <password>test456</password>
+        <lastlogin>2015-09-03 15:55</lastlogin>
+    </user>
+</xml>
