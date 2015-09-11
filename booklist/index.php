@@ -1,112 +1,45 @@
-<html style="background-color: #FF4C8F; font-family: Arial; color: white; text-shadow: #313131 1px 1px 5px"></html>
 <?php
 
-    class Book {
+    require_once("Class/Publisher.php");
 
-        private $_id;
-        private $_title;
-        private $_author;
-        private $_publisher;
-        private $_borrowed;
+    require_once("Class/Person.php");
 
-        public function __construct($id, $title, $author, $publisher, $borrowed) {
+    require_once("Class/Person/Author.php");
 
-            $this->_id = $id;
-            $this->_title = $title;
-            $this->_author = $author;
-            $this->_publisher = $publisher;
-            $this->_borrowed = $borrowed;
+    require_once("Class/Person/Borrower.php");
 
-        }
+    require_once("Class/Book.php");
 
-        public function getId() {
-            return $this->_id;
-        }
+    require_once("Class/Bookshelf.php");
 
-        public function setTitle($title) {
-            $this->_title = $title;
-        }
+    require_once("Class/Machine/Printer/BrowserPrinter.php");
 
-        public function getTitle() {
-            return $this->_title;
-        }
+    require_once("Class/Machine/Printer/DataPrinter.php");
 
-        public function setAuthor($author) {
-            $this->_author = $author;
-        }
+    $book1Author = new Author("Douglas", "Crockford");
+    $book1Publisher = new Publisher("O'Reilly");
+    $book1Borrower = new Borrower("Daniel", "Schulz");
+    $book1 = new Book(1, "JavaScript, The Good Part", $book1Author, $book1Publisher, $book1Borrower);
 
-        public function getAuthor() {
-            return $this->_author;
-        }
+    $book2Author = new Author("John", "Resig");
+    $book2Publisher = new Publisher("Manning");
+    $book2Borrower = new Borrower("Michael", "Neuhaus");
+    $book2 = new Book(2, "Secrets Of The JavaScript Ninja", $book2Author, $book2Publisher, $book2Borrower);
 
-        public function setPublisher($publisher) {
-            $this->_publisher = $publisher;
-        }
+    $book3Author = new Author("Mark Ethan", "Trostler");
+    $book3Publisher = new Publisher("O'Reilly");
+    $book3Borrower = new Borrower();
+    $book3 = new Book(3, "Testable JavaScript", $book3Author, $book3Publisher, $book3Borrower);
 
-        public function getPublisher() {
-            return $this->_publisher;
-        }
+    $book4Author = new Author("Stoyan", "Stefanov");
+    $book4Publisher = new Publisher("O'Reilly");
+    $book4Borrower = new Borrower("Daniel", "Schulz");
+    $book4 = new Book(4, "JavaScript Patterns", $book4Author, $book4Publisher, $book4Borrower);
 
-        public function setBorrowed($borrowed) {
-            $this->_publisher = $borrowed;
-        }
-
-        public function getBorrowed() {
-            return $this->_borrowed;
-        }
-
-    }
-
-    class Bookshelf implements Iterator {
-
-        private $index = 0;
-        private $arrayOfBooks = array();
-
-        public function __construct() {
-            $this->index = 0;
-        }
-
-        function rewind() {
-            $this->index = 0;
-        }
-
-        function current() {
-            return $this->arrayOfBooks[$this->index];
-        }
-
-        function key() {
-            return $this->index;
-        }
-
-        function next() {
-            ++$this->index;
-        }
-
-        function valid() {
-            return isset($this->arrayOfBooks[$this->index]);
-        }
-
-        public function addOneBookToArray(Book $book) {
-
-            $this->arrayOfBooks[] = $book;
-            return $this;
-        }
-
-        public function getArrayOfBooks() {
-            return $this->arrayOfBooks;
-        }
-
-        public function printArrayOfBooks() {
-            print_r( $this->getArrayOfBooks() );
-        }
-
-    }
-
-    $book1 = new Book(1, "JavaScript, The Good Parts", "Douglas Crockford", "O'Reilly", "Daniel Schulz");
-    $book2 = new Book(2, "Secrets Of The JavaScript Ninja", "John Resig", "Manning", "Michael Neuhaus");
-    $book3 = new Book(3, "Testable JavaScript", "Mark Ethan Trostler", "O'Reilly", "-");
-    $book4 = new Book(4, "JavaScript Patterns", "Stoyan Stefanov", "O'Reilly", "Daniel Schulz");
-    $book5 = new Book(5, "Eloquent JavaScript", "Marijn Haverbeke", "no starch press", "-");
+    $book5Author = new Author("Marijn", "Haverbeke");
+    $book5Publisher = new Publisher("no starch press");
+    $book5Borrower = new Borrower();
+    $book5 = new Book(5, "Eloquent JavaScript", $book5Author, $book5Publisher, $book5Borrower);
 
     $newBookshelf = new Bookshelf;
 
@@ -116,31 +49,18 @@
     $newBookshelf->addOneBookToArray($book4);
     $newBookshelf->addOneBookToArray($book5);
 
-    foreach ($newBookshelf as $eachBook) {
-        $id = $eachBook->getId();
-        $title = $eachBook->getTitle();
-        $author = $eachBook->getAuthor();
-        $publisher = $eachBook->getPublisher();
-        $borrowed = $eachBook->getBorrowed();
+    $type = (int)$_GET['type'];
 
-        echo "$id | $title | $author | $publisher | $borrowed </br><hr>";
-
+    if ( isset( $_GET['type'] ) ) {
+        if ( $type === 1 ) {
+            $pinkBrowserPrinter = new BrowserPrinter($newBookshelf);
+        } else if ( $type === 2 ) {
+            $pinkDataPrinter = new DataPrinter($newBookshelf);
+        } else {
+            echo "Nothing to print.";
+        }
+    } else {
+        echo "Something is wrong.";
     }
-
-// below for testing
-
-/*echo "<br>for testing:<br>";
-
-class Dissert {
-    public $flavour = "vanilla";
-    public $colour = "cream";
-    public $temperature = "iced";
-}
-
-$icecream = new Dissert();
-
-foreach ($icecream as $key => $value) {
-    echo "$key : $value <br>";
-}*/
 
 ?>
