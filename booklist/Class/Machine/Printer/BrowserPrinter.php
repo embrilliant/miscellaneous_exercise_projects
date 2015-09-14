@@ -10,7 +10,7 @@
 
     class BrowserPrinter extends Printer {
 
-        public function __construct($somethingToPrint) {
+        public function __construct(Bookshelf $somethingToPrint) {
 
             echo '<html style="background-color: #FF0055; font-family: Arial; color: white; text-shadow: #313131 1px 1px 5px"></html>';
             foreach ($somethingToPrint as $eachThing) {
