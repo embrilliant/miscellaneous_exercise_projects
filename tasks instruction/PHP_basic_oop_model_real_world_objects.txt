@@ -1,0 +1,19 @@
+PHP - OOP Basic Example - model classes based on real world objects
+-------------------------------------------------------------------
+
+A short exercise to deepen the gained knowledge from the last PHP OOP basic exercise.
+
+- Car
+- Balls
+- Astronaut		| each of this, the astronaut
+- Minion		| and the minion are considered to be humanoid
+- Elephant (orange and black)
+- Duck
+
+Foreach of those please design:
+- a class
+-- at least two properties (plus the related getter/setter to set the property values)
+-- at least one method (beside of the constructor)
+
+Think about generalization and specialization (when it makes sence). Think about interfaces and abstract classe (if it makes any sense).
+

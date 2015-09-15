@@ -1,0 +1,21 @@
+UML information
+---------------
+UML class diagram
+	https://en.wikipedia.org/wiki/Class_diagram
+
+And then again, UML class diagram in a nutshell:
+	http://www.cs.bsu.edu/homepages/pvg/misc/uml/
+	
+UML Editor
+----------
+astah community edition, download:
+	http://astah.net/download
+	
+To do quick thinks right away online:
+	https://www.draw.io/
+	
+	(Change languages via globe symbole in the upper right corner,
+	pick UML symbols from the left toolbar "UML").
+	
+
+So please, read through the two articles, then download the tool "astah" and create the class diagram for the classes you have created with the last exercise.

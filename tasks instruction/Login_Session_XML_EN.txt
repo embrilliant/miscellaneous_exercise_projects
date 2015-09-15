@@ -1,0 +1,79 @@
+
+PHP - Login with Session and XML data access 
+--------------------------------------------
+
+This exercise should be done with little effort.
+
+In terms of:
+- use only plain PHP functions (no frameworks, external components etc)
+- plain user interface (only the neccessary input fields, links, no special styling at all)
+
+
+User  Interface:
+----------------
+
+Login-Screen
+
+Simple website with a login formular. Fields:
+
+  - Username
+  - Passwort
+  
+Both fields must only accept a maximum amount of 10 characters.
+The passwortfield has to mask the user input.
+
+
+After-Login Screen
+
+As soon as the user has been successfully authentificated, the site
+shall show a "greeting page", to welcome the loged-in user:
+
+
+  Hello [username]!
+  
+  Your last login has been: [dd-mm-yyyy H:i]
+  
+On this page there 's no other possibilities, except for this two links:
+
+  - "log out" - user gets logged-out 
+  - "Test" - this is just a testpage, which can only be reached if the user
+  is logged-in. From this page there should also be the link to go back to
+  the welcome page
+
+Data:
+-----
+
+The login-data should be saved in a XML file:
+
+  <xml>
+    <user>
+      <username>micha</username>
+      <password>testmicha</password>
+      <lastlogin>[dde-mm-yyyy h:i:s]</lastlogin>
+     <user>
+
+     <user>
+      <username>christoph</username>
+      <password>test123</password>
+      <lastlogin>[dde-mm-yyyy h:i:s]</lastlogin>
+     </user>
+     
+     <user>
+      <username>claudia</username>
+      <password>test456</password>
+      <lastlogin>[dde-mm-yyyy h:i:s]</lastlogin>
+     </user>
+  </xml>
+  
+Everytime a user wants to login, this XML file should be read to
+enable user authentification (check credentials).
+
+More user can be added at any time, by extending this file.
+
+After every successful login, the last login date shall be saved in the XML structur.
+
+
+Authentification:
+-----------------
+Please work with a PHP Session 
+
