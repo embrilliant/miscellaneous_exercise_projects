@@ -13,10 +13,6 @@
         private $weight;
         private $levelOfHardness;
 
-
-
-
-
         public function setWeight($weight) {
             $this->weight = $weight;
         }

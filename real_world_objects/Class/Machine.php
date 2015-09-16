@@ -16,16 +16,16 @@
             $this->operator = $operator;
         }
 
+        public function getOperator() {
+            return $this->operator;
+        }
+
         public function setFuel($fuel) {
             $this->fuel = $fuel;
         }
 
         public function getFuel() {
             return $this->fuel;
-        }
-
-        public function getOperator() {
-           return $this->operator;
         }
 
         public function name() {
