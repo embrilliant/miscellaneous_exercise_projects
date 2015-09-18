@@ -1,0 +1,33 @@
+Die Uhr tickt ... 
+... in Berlin. Und nicht nur das. Eine etwas andere Art leuchtet die Zeit. Diesem Kunstwerk nähern wir uns von der programmatischen Seite. Wer vorab schon mal nähere Informationen zur Uhr und der dahinter stehende Dojo-Idee möchte, ist hier gut bedient: 
+http://content.codersdojo.org/code-kata-catalogue/berlin-clock/ 
+http://www.surveyor.in-berlin.de/berlin/uhr/indexe.html
+
+Dieses Mal findet unser Event bei der Eurostaff Group statt. Adresse: Friedrichstrasse 200, 10117 Berlin. Direkt am U-Bahnhof Stadtmitte.
+
+Wie immer versuchen wir die Coding Kata in Pairs oder kleinen Teams zu lösen, mit Hilfe von TDD und unserer favorisierten Programmiersprache. Alle Entwickler, unabhängig ihres Wissenslevels oder ihrer Programmiersprache, sind herzlich willkommen.
+
+Bitte vergesst nicht, einen Laptop mit der IDE Eurer Wahl mitzubringen.
+
+Wir freuen uns auf Euch.
+
+Grüße vom Agile Developers Berlin Team 
+Isabel, Sven und Michael
+
+
+The clock is ticking ...
+
+... in Berlin. We want to transfer the artwork of the Berlin Clock to a small Coding Kata. If you want to get more information about the Berlin Clock please see the following links:
+
+http://content.codersdojo.org/code-kata-catalogue/berlin-clock/ 
+http://www.surveyor.in-berlin.de/berlin/uhr/indexe.html
+
+This time, our event is held at the Euro Flagstaff Group. The address: Friedrichstrasse 200, 10117 Berlin. You can find the building close to the underground train station "Stadtmitte".
+
+As on the coding events before, we will program in pairs or small teams. With TDD and your favor programming language. All of you are welcome, it doesn't matter of which experience level you are or which programming language you use. 
+Please don't forget your Laptop with installed IDE of your choice.
+
+We are happy to see you.
+
+Regards from your Agile Developers Berlin Team, 
+Isabel, Sven und Michael
