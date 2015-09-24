@@ -15,24 +15,27 @@ $(function() {
         $("#time").text(timeString);
 
         //top circle
-        if ( second % 2 == 0 ) {
+        /*if ( second % 2 == 0 ) {
             $("#top_circle").css({"background-color": "gold"});
         } else {
             $("#top_circle").css({"background-color": "rgba(0, 0, 0, 0)"});
-        }
-
-        //row1
-       /* if ( hour == 0 ) {
-            $(".hours").css({"background-color": "white"});
-        } else if ( hour > 1 && hour <= 5 ) {
-            $(".hours").eq(0).siblings().css({"background-color": "white"});
-            $(".hours").eq(0).css({"background-color": "#FF2751"});
-        } else if ( hour > 5 && hour <= 10 ) {
-            $(".hours").eq(0).siblings().css({"background-color": "white"});
-            $(".hours").eq(0).css({"background-color": "#FF2751"});
         }*/
 
-        function colorChange(hourOfTheDay) {
+        //row1
+        if ( hour >= 20 ) {
+            $("#row1").children().css("background-color", "#FF2751");
+        } else if ( hour >= 15 ) {
+            $("#row1").children().eq(0).css("background-color", "#FF2751");
+            $("#row1").children().eq(1).css("background-color", "#FF2751");
+            $("#row1").children().eq(2).css("background-color", "#FF2751");
+        } else if ( hour >= 10 ) {
+            $("#row1").children().eq(0).css("background-color", "#FF2751");
+            $("#row1").children().eq(1).css("background-color", "#FF2751");
+        } else if ( hour >= 5 ) {
+            $("#row1").children().eq(0).css("background-color", "#FF2751");
+        }
+
+        /*function colorChange(hourOfTheDay) {
             if ( hour < hourOfTheDay ) {
                 return "white";
             } else {
@@ -43,7 +46,7 @@ $(function() {
         $("#row1").children().eq(0).css("background-color", colorChange(5) );
         $("#row1").children().eq(1).css("background-color", colorChange(10) );
         $("#row1").children().eq(2).css("background-color", colorChange(15) );
-        $("#row1").children().eq(3).css("background-color", colorChange(20) );
+        $("#row1").children().eq(3).css("background-color", colorChange(20) );*/
 
         function row2() {
             if ( hour % 5 == 1 ) {
