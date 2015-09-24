@@ -15,11 +15,11 @@ $(function() {
         $("#time").text(timeString);
 
         //top circle
-        /*if ( second % 2 == 0 ) {
+        if ( second % 2 == 0 ) {
             $("#top_circle").css({"background-color": "gold"});
         } else {
             $("#top_circle").css({"background-color": "rgba(0, 0, 0, 0)"});
-        }*/
+        }
 
         //row1
         if ( hour >= 20 ) {
