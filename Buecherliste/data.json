@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Secrets Of The JavaScript Ninja",
+    "author": "John Resig",
+    "url": "http://ejohn.org/blog/secrets-of-the-javascript-ninja-released/"
+  },
+  {
+    "title": "Developing Backbone.js Applications",
+    "author": "Addy Osmani",
+    "url": "http://addyosmani.github.io/backbone-fundamentals/"
+  },
+  {
+    "title": "JavaScript Patterns",
+    "author": "Stoyan Stefanov",
+    "url": "http://blog.stoyanstefanov.com/"
+  },
+  {
+    "title": "Full Stack Web Development with Backbone.js",
+    "author": " Patrick Mulder",
+    "url": "http://pipefishbook.com/"
+  },
+  {
+    "title": "Building Node Applications with MongoDB and Backbone",
+    "author": "Mike Wilson",
+    "url": "https://github.com/Swiftam/book-node-mongodb-backbone"
+  },
+  {
+    "title": "Testable JavaScript",
+    "author": "Mark Ethan Trostler",
+    "url": "http://www.goodreads.com/book/show/14514272-testable-javascript"
+  },
+  {
+    "title": "JavaScript: The Good Parts: Working with the Shallow Grain of JavaScript ",
+    "author": "Douglas Crockford ",
+    "url": "http://www.amazon.com/exec/obidos/ASIN/0596517742/wrrrldwideweb"
+  },
+  {
+    "title": "AngularJS: Up and Running: Enhanced Productivity with Structured Web Apps",
+    "author": "Shyam Seshadri ",
+    "url": "http://www.amazon.de/AngularJS-Running-Enhanced-Productivity-Structured/dp/1491901942/ref=pd_sim_14_4?ie=UTF8&refRID=0NCGGR3EX5QJ65Q54H4Q"
+  }
+]
