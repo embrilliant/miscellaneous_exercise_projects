@@ -1,0 +1,21 @@
+{
+  "name": "Buecherliste",
+  "version": "1.0.0",
+  "authors": [
+    "Emily"
+  ],
+  "description": "dessscription",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "test"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "handlebars": "latest",
+    "bootstrap": "latest",
+    "jquery": "latest",
+    "underscore": "latest",
+    "backbone": "latest"
+  }
+}
