@@ -11,7 +11,7 @@ function City( cityName ) {
 
     var dataProvider = new dataProvider_openweathermap(cityName);
 
-    var that = this;
+    //var that = this;
 
     /*this.getWhatEverData = function() {
         return whatEverData;
@@ -21,12 +21,13 @@ function City( cityName ) {
 
         dataProvider.getData(function(data, obj) {
 
-            temperature = obj.temperature;
+            //temperature = obj.temperature;
 
-            console.log('inside of callback', temperature);
+            //console.log('inside of callback', temperature);
 
             if (someFunc) {
-                someFunc(data, obj, that);
+                someFunc(data, obj);
+                //someFunc(data, obj, that);
             }
         });
     };

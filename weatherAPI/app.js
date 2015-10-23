@@ -21,7 +21,7 @@
 
             var html = "<section>" +
                 "<h2>" + obj.name + "</h2>" +
-                "<div class='weather'>" + city.getTemperature() + "</div>" +
+                "<div class='weather'>" + obj.weather + "</div>" +
                 "<div class='temp'>" + obj.temperature + " &degC</div>" +
                 "<div class='temp'>" + obj.errorMsg + "</div>" +
                 "</section>";
