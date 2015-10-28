@@ -29,11 +29,13 @@ function dataProvider_openweathermap(cityName) {
         });
     };
 
-    this.getConvertedTemperature = function(kelvin) {
+    /*this.getConvertedTemperature = function(kelvin) {
         return Math.round( (kelvin - 273.15)*10 )/10;
-    };
+    };*/
 
-    this.getCityName = function(cityData) {
+    /*this.getCityName = function(cityData) {
         return cityData.name;
-    };
+    };*/
 }
+
+module.exports.dataProvider_openweathermap = dataProvider_openweathermap;
