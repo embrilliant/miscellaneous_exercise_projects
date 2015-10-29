@@ -22,12 +22,20 @@ function CitiesList(arrayOfCities) {
         }
     };
 
+    this.deleteAllCities = function() {
+        citiesArray.length = 0;
+    };
+
     this.getCitiesList = function() {
         return citiesArray; //return array
     };
 
-    this.deleteAllCities = function() {
-        citiesArray.length = 0;
+    this.getCount = function() {
+        return citiesArray.length; //length of array: number
+    };
+
+    this.getCity = function( nameOfCity ) {
+        return new City( nameOfCity );
     };
 
     this.showArrayInConsole = function() {

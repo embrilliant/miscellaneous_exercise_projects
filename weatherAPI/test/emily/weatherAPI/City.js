@@ -31,7 +31,7 @@ describe("2. Test if a new object is an instance", function() {
     });
 });
 
-describe("3. Test if the new object has a method", function() {
+describe("3. Test if the new object has the method", function() {
     it("should have the method", function() {
         var newCity = new City("Berlin");
         newCity.should.include.keys("doSomeUIToData");
@@ -42,11 +42,11 @@ describe("4. Test if the method works", function() {
     it("the method should work", function() {
         var newCity = new City("Berlin");
         var stub = sinon.stub(newCity,"getDataProvider", function(){
-            return new dataProvider_openweathermap('Berlin');
+            return new dataProvider_openweathermap("Berlin");
         });
         var spy = sinon.spy(newCity, "doSomeUIToData");
-        spy();
-        spy.should.have.been.called;
+        newCity.doSomeUIToData();
+        assert(spy.called);
     });
 });
 
@@ -54,7 +54,7 @@ describe("5. Test if the method calls a callback", function() {
     it("should call a callback", function() {
         var newCity = new City("Berlin");
         var stub = sinon.stub(newCity,"getDataProvider", function(){
-            return new dataProvider_openweathermap('Berlin');
+            return new dataProvider_openweathermap("Berlin");
         });
         var callback = sinon.spy();
         newCity.doSomeUIToData(callback);
@@ -108,7 +108,24 @@ describe("8. Test if data can be retrieved correctly", function() {
     });
 });
 
-describe("9. Test how things work", function() {
+describe("9. Test again if data can be retrieved correctly", function() {
+    it("should get the correct data", function() {
+        var data;
+        var cityName;
+        var newCity = new City("London");
+        var stub = sinon.stub(newCity,"getDataProvider", function(){
+            return new dataProvider_openweathermap("London");
+        });
+        newCity.doSomeUIToData(function(obj) {
+            data = obj;
+            cityName = obj.name;
+        });
+        assert.equal(data.name, "London");
+        assert.equal(data.temperature, 12);
+    });
+});
+
+describe("10. Test how things work", function() {
     it("should tell you how things work", function() {
         var newCity = new City("Berlin");
         var stub = sinon.stub(newCity,"getDataProvider", function(){

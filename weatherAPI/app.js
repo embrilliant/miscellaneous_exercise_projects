@@ -1,15 +1,15 @@
 //$(function() {
 
-    var newCitiesList = new CitiesList(["Berlin", "Redmond", "Cupertino", "Stockholm", "Gibraltar"]);
+    var newCitiesList = new CitiesList(["berlin", "redmond", "cupertino", "stockholm", "gibraltar"]);
 
     //UI
     function updateUI() {
 
-        var citiesArray = newCitiesList.getCitiesList();
         $("#container").html("");
-        for (var i = 0; i < citiesArray.length; i++) {
 
-            var city = new City( citiesArray[i] );
+        for (var i = 0; i < newCitiesList.getCount(); i++) {
+            //var city = new City( citiesArray[i] );
+            var city = newCitiesList.getCity( newCitiesList.getCitiesList()[i] );
 
             city.doSomeUIToData(function (data, obj) {
 
@@ -26,7 +26,23 @@
         }
     }
 
-    function add() {
+    var actions = {
+        add: function() {
+            var userInput = $("input").val();
+            var userInputLower = userInput.toLowerCase();
+            newCitiesList.addNewCity(userInputLower);
+        },
+        remove: function() {
+            var userInput = $("input").val();
+            var userInputLower = userInput.toLowerCase();
+            newCitiesList.removeCity(userInputLower);
+        },
+        deleteAll: function() {
+            newCitiesList.deleteAllCities();
+        }
+    };
+
+    /*function add() {
         var userInput = $("input").val(); //cityName
         newCitiesList.addNewCity(userInput);
         newCitiesList.showArrayInConsole();
@@ -41,23 +57,23 @@
     function deleteAll() {
         newCitiesList.deleteAllCities();
         newCitiesList.showArrayInConsole();
-    }
+    }*/
 
     $("#btnAdd").on("click", function(e) {
         e.preventDefault();
-        add();
+        actions.add();
         updateUI();
     });
 
     $("#btnDltAll").on("click", function(e) {
         e.preventDefault();
-        deleteAll();
+        actions.deleteAll();
         updateUI();
     });
 
     $("#btnRemove").on("click", function(e) {
         e.preventDefault();
-        remove();
+        actions.remove();
         updateUI();
     });
 
