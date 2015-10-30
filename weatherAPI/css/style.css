@@ -35,5 +35,4 @@ h2 {
 
 section:hover {
     margin-left: 100px;
-    transition: margin 1s ease;
 }
