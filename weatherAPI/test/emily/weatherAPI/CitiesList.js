@@ -1,5 +1,5 @@
 /** Testing CitiesList **/
-//var CitiesList = require('../../../lib/emily/weatherAPI/CitiesList.js');
+//var CitiesList = require('../../../lib/emily/weatherAPI/Board.js');
 
 //var blub = new CitiesList.CitiesList();
 //console.log('object is here ..... ', newCityList.getCitiesList());
