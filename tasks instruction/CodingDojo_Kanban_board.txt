@@ -1,0 +1,26 @@
+Exercise - Coding Kata Kanban Board
+-----------------------------------
+
+Your team needs a digital Kanban board urgently.
+
+So create a board with columns for To Do, In Progress, Review and Done.
+
+New tasks are set in the column To Do and are moved to the next right column, if there is not already reached the WIP limit.
+
+Tasks has to be taken by team members in the moment they move it to In Progress.
+
+Visualize the board as you like.
+
+Some constrains
+---------------
+- build with JavaScript
+- use OOP approach
+	-- build appropriate objects
+	-- aim for loose coupling of objects (e.g. make use of dependency injection and such)
+	-- separate logic from layout
+- Testdriven (write tests first)
+	-- use mocha.js - the browser version
+
+Bonus, as you like
+-------------------
+- the basic version don't need any data persistence, but as a bonus, you can write all data to local storage (HTML5) and restore every data once the user is visiting the app again
