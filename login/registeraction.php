@@ -30,6 +30,6 @@
 
         $xmlData->asXML("data.xml");
 
-        print "<meta http-equiv=\"refresh\" content=\"0;URL=../login/index.html\">";
+        print "<meta http-equiv=\"refresh\" content=\"0;URL=../login/dropTest.html\">";
     }
 ?>
