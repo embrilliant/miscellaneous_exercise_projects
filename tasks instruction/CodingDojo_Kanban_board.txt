@@ -24,3 +24,11 @@ Some constrains
 Bonus, as you like
 -------------------
 - the basic version don't need any data persistence, but as a bonus, you can write all data to local storage (HTML5) and restore every data once the user is visiting the app again
+
+_________________________________
+You could introduce a small field where one could drop and drag a picture from the local computer.
+
+The picture will be uploaded, to be used as new wallpaper
+With the help of HTML5 - FileAPI:
+
+http://www.webcodegeeks.com/html5/html5-file-upload-example/
