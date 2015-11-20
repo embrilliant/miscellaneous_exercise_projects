@@ -32,3 +32,17 @@ The picture will be uploaded, to be used as new wallpaper
 With the help of HTML5 - FileAPI:
 
 http://www.webcodegeeks.com/html5/html5-file-upload-example/
+
+_________________________________________________
+[13:44:06] Silent Fraud Neuhaus: http://www.sitepoint.com/html5-full-screen-api/
+
+https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API
+[13:44:11] Silent Fraud Neuhaus: As a starting point
+[13:44:20] Silent Fraud Neuhaus: But... seems ... just "Fullscreen API"
+[13:45:02] Silent Fraud Neuhaus: You might also find it in this project:
+[13:45:03] Silent Fraud Neuhaus: https://github.com/XSilent/jsPaint
+[13:45:14] Silent Fraud Neuhaus: As far as I can remember, we implemented this here....
+[13:46:14] Silent Fraud Neuhaus: ah yes ... here:
+https://github.com/XSilent/jsPaint/blob/master/js/admin.js
+
+--> this.fullscreen = function() ....
