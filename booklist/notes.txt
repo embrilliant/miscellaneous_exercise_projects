@@ -1,0 +1,3 @@
+booklist/?type=1 -> html view
+
+booklist/?type=2  ->JSON data
